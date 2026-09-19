@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aurelia | Fine Jewelry</title>
+  <link rel="stylesheet" href="../style/Main.css" />
+  <link rel="icon" href="data:," />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="./Main.html" aria-label="Aurelia home">
+      <span class="brand-word">AUREL<span>IA</span></span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="./Offers.html">Top Offers</a>
+      <a href="./LimitedEditions.html">Limited Editions</a>
+      <a href="./About.html">About</a>
+    </nav>
+    <div class="header-tools">
+      <label class="search-field header-search">
+        <span class="sr-only">Search jewelry</span>
+        <input type="search" id="search-input" placeholder="Search pieces" />
+        <span class="search-icon" aria-hidden="true">⌕</span>
+      </label>
+      <div class="filter-wrap">
+        <button id="filter-button" class="filter-button" type="button" aria-expanded="false" aria-controls="filter-menu">
+          Filter <span aria-hidden="true">⌄</span>
+        </button>
+        <div id="filter-menu" class="filter-menu" hidden>
+          <fieldset>
+            <legend>Jewelry</legend>
+            <label><input type="checkbox" value="Necklaces" /> Necklaces</label>
+            <label><input type="checkbox" value="Earrings" /> Earrings</label>
+            <label><input type="checkbox" value="Rings" /> Rings</label>
+            <label><input type="checkbox" value="Bracelets" /> Bracelets</label>
+            <label><input type="checkbox" value="Anklets" /> Anklets</label>
+            <label><input type="checkbox" value="Brooches" /> Brooches</label>
+          </fieldset>
+          <fieldset>
+            <legend>Material</legend>
+            <label><input type="checkbox" value="Gold" /> Gold</label>
+            <label><input type="checkbox" value="Platinum" /> Platinum</label>
+            <label><input type="checkbox" value="Diamond" /> Diamond</label>
+            <label><input type="checkbox" value="Emerald" /> Emerald</label>
+            <label><input type="checkbox" value="Pearl" /> Pearl</label>
+            <label><input type="checkbox" value="Silver" /> Silver</label>
+          </fieldset>
+        </div>
+      </div>
+      <a class="account-link" href="./SignIn.html">Sign in</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">The new fine jewelry collection</p>
+        <h1 id="hero-title">Light, shaped<br /><em>into forever.</em></h1>
+        <p class="hero-intro">Distinctive pieces for the moments that deserve to stay luminous.</p>
+        <a class="text-link" href="./Collection.html">Explore the collection <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="hero-orbit" aria-label="Aurelia collection search">
+        <div class="gradient-circle"></div>
+        <div class="inner-circle">
+          <span class="inner-label">Discover</span>
+          <label class="search-field circle-search">
+            <span class="sr-only">Search the collection</span>
+            <input type="search" id="circle-search" placeholder="Search" />
+            <span class="search-icon" aria-hidden="true">⌕</span>
+          </label>
+          <span class="inner-caption">Signature pieces</span>
+        </div>
+        <span class="orbit-note orbit-note-one">01 / 04</span>
+        <span class="orbit-note orbit-note-two">Made in Milano</span>
+      </div>
+    </section>
+
+    <section class="collection-strip" id="offers" aria-label="Collection highlights">
+      <span>01 — Golden hour edit</span>
+      <span>02 — Sculptural silhouettes</span>
+      <span>03 — Designed to be kept</span>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand">Aurelia <span>Fine jewelry, quietly unforgettable.</span></div>
+    <div class="footer-contact">
+      <a href="tel:+390212345678">☎ +39 02 1234 5678</a>
+      <a href="mailto:example@gmail.com">✉ example@gmail.com</a>
+      <span>⌖ Via Montenapoleone, Milan</span>
+    </div>
+    <span class="footer-year">© 2026</span>
+  </footer>
+  <script type="module" src="../public/Main.js"></script>
+  <script type="module" src="../public/Site.js"></script>
+</body>
+</html>

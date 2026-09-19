@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign In | Aurelia</title>
+  <link rel="stylesheet" href="../style/Site.css" />
+  <link rel="stylesheet" href="../style/SignIn.css" />
+  <link rel="icon" href="data:," />
+</head>
+<body class="auth-page">
+  <header class="site-header">
+    <a class="brand" href="./Main.html" aria-label="Aurelia home"><span class="brand-word">AUREL<span>IA</span></span></a>
+    <nav class="main-nav" aria-label="Main navigation"><a href="./Offers.html">Top Offers</a><a href="./LimitedEditions.html">Limited Editions</a><a href="./About.html">About</a></nav>
+    <div class="header-tools"><label class="search-field header-search"><span class="sr-only">Search jewelry</span><input type="search" placeholder="Search pieces" /><span class="search-icon" aria-hidden="true">⌕</span></label><div class="filter-wrap"><button id="filter-button" class="filter-button" type="button" aria-expanded="false" aria-controls="filter-menu">Filter <span aria-hidden="true">⌄</span></button><div id="filter-menu" class="filter-menu" hidden></div></div><a class="account-link" href="./SignIn.html">Sign in</a></div>
+  </header>
+  <main class="auth-main"><section class="auth-wheel" aria-label="Sign in form">
+    <div class="orb" aria-hidden="true"><span class="orb-halo"></span><span class="orb-layer orb-layer-gold"></span><span class="orb-layer orb-layer-violet"></span><span class="orb-layer orb-layer-light"></span><span class="orb-core"></span><span class="orb-particle orb-particle-one"></span><span class="orb-particle orb-particle-two"></span><span class="orb-particle orb-particle-three"></span></div><div class="auth-card"><p class="eyebrow">Welcome back</p><h1>Sign in</h1><p class="auth-subtitle">Return to your world of light.</p><form id="signin-form"><label for="username">Email or username</label><input type="text" id="username" autocomplete="username" placeholder="you@example.com" required /><label for="password">Password</label><input type="password" id="password" autocomplete="current-password" placeholder="Your password" required /><button id="btn-submit" class="solid-button" type="submit">Sign in</button><p id="login-message" class="form-message"></p></form><p class="auth-switch">Don't have an account? <a href="./SignUp.html">Sign up</a></p></div>
+  </section></main>
+  <footer class="site-footer"><div class="footer-contact"><a href="tel:+390212345678">☎ +39 02 1234 5678</a><a href="mailto:example@gmail.com">✉ example@gmail.com</a><span>⌖ Via Montenapoleone, Milan</span></div></footer>
+  <script type="module" src="../public/SignIn.js"></script><script type="module" src="../public/Site.js"></script>
+</body>
+</html>
